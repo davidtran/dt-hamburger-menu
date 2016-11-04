@@ -39,11 +39,11 @@ angular
 **Embed menu to your website**
 
 ```html
-<hamburger>
+<dt-hamburger-menu>
   <ul class="menu-list">
     <li class="menu-item" ng-click="vm.export()">Export</li>
     <li class="menu-item" ng-click="vm.import()">Import</li>
   </ul>
-<hamburger>
+<dt-hamburger-menu>
 ```
 Remember to define *export()* and *import()* function somewhere in your controller or directive
