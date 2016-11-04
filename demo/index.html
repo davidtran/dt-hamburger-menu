@@ -24,27 +24,6 @@
       </ul>
     </dt-hamburger-menu>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-    <script src="../src/hamburger-menu.js"></script>
-    <script>
-      angular
-        .module('app', [
-          'dt-hamburger-menu'
-        ])
-        .controller('appCtrl', function() {
-          var vm = this;
-
-          vm.testCommand = function() {
-            alert('It works!');
-          }
-
-          vm.testCommand1 = function() {
-            alert('Still works!');
-          }
-
-          vm.testCommand2 = function() {
-            alert('Enough. Test.');
-          }
-        });
-    </script>
+    <script src="bundle.js"></script>
   </body>
 </html>

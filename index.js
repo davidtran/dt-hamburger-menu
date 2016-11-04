@@ -1,2 +1,2 @@
-require('src/hamburger-menu.js');
+require('./src/hamburger-menu.js');
 module.exports = 'dt-hamburger-menu';
