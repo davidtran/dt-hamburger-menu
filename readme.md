@@ -1,8 +1,8 @@
 # AngularJS Hamburger Menu
 Minimal AngularJS hamburger menu for your mobile website
 
-![screen shot 2016-11-04 at 5 10 36 ch](https://cloud.githubusercontent.com/assets/1154740/20002277/bb912604-a2b2-11e6-81a8-1bd44441a971.png)
-![screen shot 2016-11-04 at 5 10 48 ch](https://cloud.githubusercontent.com/assets/1154740/20002278/bbfdbd28-a2b2-11e6-99e6-1780af539138.png)
+![screen shot 2016-11-04 at 5 20 09 ch](https://cloud.githubusercontent.com/assets/1154740/20003287/4523482a-a2b8-11e6-8f37-4c94c023b069.png)
+![screen shot 2016-11-04 at 5 20 17 ch](https://cloud.githubusercontent.com/assets/1154740/20003288/45803f62-a2b8-11e6-8f20-f666d2107c4e.png)
 
 # [Demo](http://davidtran.github.io/angularjs-hamburger-menu/demo/index.html)
 
