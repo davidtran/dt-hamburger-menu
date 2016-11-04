@@ -1,6 +1,6 @@
 {
-  "name": "angularjs-hamburger-menu",
-  "version": "0.0.1",
+  "name": "dt-hamburger-menu",
+  "version": "1.0.0",
   "description": "Minimal AngularJS hamburger menu for your mobile website",
   "main": "index.js",
   "scripts": {
