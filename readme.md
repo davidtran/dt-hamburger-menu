@@ -9,9 +9,11 @@ Demo:
 bower install dt-hamburger-menu
 ```
 or
+
 **NPM**
 ```
 npm install dt-hamburger-menu
+```
 
 **Imports**
 ```html
