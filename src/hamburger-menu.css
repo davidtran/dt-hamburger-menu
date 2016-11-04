@@ -15,7 +15,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 250px;
+  max-width: 70%;
   transform: translate(999px, 0);
   transition: transform 0.5s;
   background: white;

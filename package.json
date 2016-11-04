@@ -1,7 +1,7 @@
 {
   "name": "angularjs-hamburger-menu",
   "version": "0.0.1",
-  "description": "Minimal AngularJS hamburger menu for your mobile website — Edit",
+  "description": "Minimal AngularJS hamburger menu for your mobile website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
