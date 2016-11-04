@@ -1,0 +1,50 @@
+<html ng-app="app">
+  <head>
+    <title>AngularJS hamburger menu</title>
+    <link rel="stylesheet" href="../../src/hamburger-menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+      * {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body ng-controller="appCtrl as vm">
+    <dt-hamburger-menu>
+      <ul class="menu-list">
+        <li class="menu-item" ng-click="vm.testCommand()">
+          About
+        </li>
+        <li class="menu-item" ng-click="vm.testCommand1()">
+          Portfolio
+        </li>
+        <li class="menu-item" ng-click="vm.testCommand2()">
+          Contact
+        </li>
+      </ul>
+    </dt-hamburger-menu>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="../src/hamburger-menu.js"></script>
+    <script>
+      angular
+        .module('app', [
+          'dt-hamburger-menu'
+        ])
+        .controller('appCtrl', function() {
+          var vm = this;
+
+          vm.testCommand = function() {
+            alert('It works!');
+          }
+
+          vm.testCommand1 = function() {
+            alert('Still works!');
+          }
+
+          vm.testCommand2 = function() {
+            alert('Enough. Test.');
+          }
+        });
+    </script>
+  </body>
+</html>

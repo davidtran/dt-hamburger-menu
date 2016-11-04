@@ -7,7 +7,7 @@ function dtHmburgerMenu() {
     restrict: 'E',
     templateUrl: 'dt-hamburger-menu.html',
     controller: dtHmburgerMenuCtrl,
-    controller: 'dtHmburgerMenu',
+    controllerAs: 'dtHamburgerMenu',
     transclude: true
   };
 }
@@ -16,12 +16,15 @@ function dtHmburgerMenuCtrl() {
   var vm = this;
 
   vm.isShowingMenu = false;
+  vm.openMenu = openMenu;
+  vm.closeMenu = closeMenu;
 
-  function showMenu() {
+  function openMenu() {
+
     vm.isShowingMenu = true;
   }
 
-  function hideMenu() {
+  function closeMenu() {
     vm.isShowingMenu = false;
   }
 }
@@ -30,13 +33,13 @@ angular
   .module('dt-hamburger-menu')
   .run(['$templateCache', function($templateCache) {
     $templateCache.put("dt-hamburger-menu.html", [
-      '<a class="hamburger-menu-button" ng-click="hamburger.openMenu()"></a>',
-      '<div class="hamburger-menu-content" ng-class="{active: hamburger.isShowingMenu}">',
+      '<a class="hamburger-menu-button" ng-click="dtHamburgerMenu.openMenu()"></a>',
+      '<div class="hamburger-menu-content" ng-class="{active: dtHamburgerMenu.isShowingMenu}">',
         '<div class="hamburger-menu-close-wrapper">',
-          '<a class="hamburger-menu-close" ng-click="hamburger.closeMenu()"></a>',
+          '<a class="hamburger-menu-close" ng-click="dtHamburgerMenu.closeMenu()"></a>',
         '</div>',
         '<ng-transclude></ng-transclude>',
       '</div>',
-      '<div class="hamburger-menu-backdrop" ng-if="hamburger.isShowingMenu" ng-click="hamburger.closeMenu()"></div>'
+      '<div class="hamburger-backdrop" ng-class="{active: dtHamburgerMenu.isShowingMenu}" ng-click="dtHamburgerMenu.closeMenu()"></div>'
     ].join(''))
   }]);

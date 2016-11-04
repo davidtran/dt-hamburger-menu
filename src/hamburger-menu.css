@@ -14,15 +14,20 @@
 .hamburger-menu-content {
   position: fixed;
   top: 0;
-  left: 100px;
-  width: 80%;
-  transform: translate(100%, 0);
+  right: 0;
+  width: 300px;
+  transform: translate(999px, 0);
   transition: transform 0.5s;
   background: white;
   padding: 20px;
   height: 100%;
   bottom: 0;
   z-index: 99;
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.hamburger-menu-content.active {
+  transform: translate(0, 0);
 }
 
 .hamburger-menu-close-wrapper {
@@ -45,6 +50,7 @@
 
 .hamburger-menu-content .menu-list {
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .hamburger-menu-content .menu-item {
@@ -55,8 +61,27 @@
   padding: 13px 0px 8px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  line-height: 50px;
 }
 
 .hamburger-menu-content .menu-item:last-child {
   border-bottom: none;
+}
+
+.hamburger-backdrop {
+  display: none;
+  z-index: 90;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.3s
+}
+
+.hamburger-backdrop.active {
+
+  display: block;
 }

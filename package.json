@@ -1,0 +1,27 @@
+{
+  "name": "angularjs-hamburger-menu",
+  "version": "0.0.1",
+  "description": "Minimal AngularJS hamburger menu for your mobile website — Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtran/angularjs-hamburger-menu.git"
+  },
+  "keywords": [
+    "mobile",
+    "hamburger",
+    "angularjs",
+    "menu",
+    "side",
+    "menu"
+  ],
+  "author": "Nam Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidtran/angularjs-hamburger-menu/issues"
+  },
+  "homepage": "https://github.com/davidtran/angularjs-hamburger-menu#readme"
+}
