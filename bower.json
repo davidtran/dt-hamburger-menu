@@ -1,0 +1,27 @@
+{
+  "name": "angularjs-hamburger-menu",
+  "description": "Minimal AngularJS hamburger menu for your mobile website",
+  "main": "src/hamburger-menu.js",
+  "authors": [
+    "Nam Tran"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "mobile",
+    "hamburger",
+    "angularjs",
+    "menu",
+    "side",
+    "menu"
+  ],
+  "homepage": "https://github.com/davidtran/angularjs-hamburger-menu",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ]
+}
